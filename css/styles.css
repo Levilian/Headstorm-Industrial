@@ -1,0 +1,1187 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+/* Import Sass mixins, variables, Compass modules, etc. */
+/**
+ * @file
+ * Variables file
+ *
+ * These variables are used throughout this /sass directory.
+ * The variable values are set for each theme.
+ * 
+ */
+/**
+ * @file
+ * Functions file
+ *
+ * Reusable functions.
+ */
+/**
+ * @file
+ * Classes file
+ *
+ * These classes are usually added in Drupal admin interface
+ * using Block Class or Semantic Fields modules and are used often.
+ * 
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/_classes\.scss}line{font-family:\0000313}}
+.l-inline > * {
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/_classes\.scss}line{font-family:\0000316}}
+.l-stacked > * {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/_classes\.scss}line{font-family:\0000325}}
+.header__logo-image {
+  display: inline-block;
+  margin-top: 1.3em;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/_classes\.scss}line{font-family:\0000330}}
+h2.element-invisible {
+  font-size: 0.313em;
+  line-height: 0.313em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* HTML element (SMACSS base) rules */
+/**
+ * @file
+ * Normalize.css is intended to be used as an alternative to CSS resets.
+ *
+ * This file is a slight fork of these original sources:
+ * - normalize.css v2.1.2 | MIT License | git.io/normalize
+ * - normalize.scss v2.1.2 | MIT/GPLv2 License | bit.ly/normalize-with-compass
+ *
+ * It's suggested that you read the normalize.scss file and customise it to meet
+ * your needs, rather then including the file in your project and overriding the
+ * defaults later in your CSS.
+ * @see http://nicolasgallagher.com/about-normalize-css/
+ *
+ * Also: @see http://meiert.com/en/blog/20080419/reset-style-sheets-are-bad/
+ *       @see http://snook.ca/archives/html_and_css/no_css_reset/
+ */
+/**
+ * HTML5 display definitions
+ */
+/* Correct `block` display not defined in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\0000333}}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Correct `inline-block` display not defined in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\0000340}}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\0000352}}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Address styling not present in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\0000358}}
+[hidden] {
+  display: none;
+}
+
+/**
+ * Base
+ *
+ * Instead of relying on the fonts that are available on a user's computer, you
+ * can use web fonts which, like images, are resources downloaded to the user's
+ * browser. Because of the bandwidth and rendering resources required, web fonts
+ * should be used with care.
+ *
+ * Numerous resources for web fonts can be found on Google. Here are a few
+ * websites where you can find Open Source fonts to download:
+ * - http://www.fontsquirrel.com/fontface
+ * - http://www.theleagueofmoveabletype.com
+ *
+ * In order to use these fonts, you will need to convert them into formats
+ * suitable for web fonts. We recommend the free-to-use Font Squirrel's
+ * Font-Face Generator:
+ *   http://www.fontsquirrel.com/fontface/generator
+ *
+ * The following is an example @font-face declaration. This font can then be
+ * used in any ruleset using a property like this:  font-family: Example, serif;
+ *
+ * Since we're using Sass, you'll need to declare your font faces here, then you
+ * can add them to the font variables in the _base.scss partial.
+ */
+/*
+@font-face {
+  font-family: 'Example';
+  src: url('../fonts/example.eot');
+  src: url('../fonts/example.eot?iefix') format('eot'),
+    url('../fonts/example.woff') format('woff'),
+    url('../fonts/example.ttf') format('truetype'),
+    url('../fonts/example.svg#webfontOkOndcij') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003106}}
+html {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  line-height: 1.5em;
+}
+
+/* Remove default margin. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003126}}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Links
+ *
+ * The order of link states are based on Eric Meyer's article:
+ * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+ */
+/* Address `outline` inconsistency between Chrome and other browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003148}}
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improve readability when focused and also mouse hovered in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003154}}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * Typography
+ *
+ * To achieve a pleasant vertical rhythm, we use Compass' Vertical Rhythm mixins
+ * so that the line height of our base font becomes the basic unit of vertical
+ * measurement. We use multiples of that unit to set the top and bottom margins
+ * for our block level elements and to set the line heights of any fonts.
+ * For more information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
+ */
+/* Set 1 unit of vertical rhythm on the top and bottom margin. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003170}}
+p,
+pre {
+  margin: 1.5em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003173}}
+blockquote {
+  /* Also indent the quote on both sides. */
+  margin: 1.5em 30px;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003182}}
+h1 {
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+  font-size: 2em;
+  line-height: 1.5em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003190}}
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003195}}
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003200}}
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003205}}
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003210}}
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin-top: 2.23881em;
+  margin-bottom: 2.23881em;
+}
+
+/* Address styling not present in IE 8/9, Safari 5, and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003217}}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003223}}
+b,
+strong {
+  font-weight: bold;
+}
+
+/* Address styling not present in Safari 5 and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003228}}
+dfn {
+  font-style: italic;
+}
+
+/* Address differences between Firefox and other browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003233}}
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  border: 1px solid #666;
+  padding-bottom: -1px;
+  margin: 1.5em 0;
+}
+
+/* Address styling not present in IE 8/9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003242}}
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* Correct font family set oddly in Safari 5 and Chrome. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003253}}
+code,
+kbd,
+pre,
+samp,
+tt,
+var {
+  font-family: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* Improve readability of pre-formatted text in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003262}}
+pre {
+  white-space: pre-wrap;
+}
+
+/* Set consistent quote types. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003274}}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* Address inconsistent and variable font size in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003279}}
+small {
+  font-size: 80%;
+}
+
+/* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003285}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003291}}
+sup {
+  top: -0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003294}}
+sub {
+  bottom: -0.25em;
+}
+
+/**
+ * Lists
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003304}}
+dl,
+menu,
+ol,
+ul {
+  /* Address margins set differently in IE 6/7. */
+  margin: 1.5em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003311}}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  /* Turn off margins on nested lists. */
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003316}}
+dd {
+  margin: 0 0 0 30px;
+  /* LTR */
+}
+
+/* Address paddings set differently in IE 6/7. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003323}}
+menu,
+ol,
+ul {
+  padding: 0 0 0 30px;
+  /* LTR */
+}
+
+/**
+ * Embedded content and figures
+ *
+ * @todo Look into adding responsive embedded video.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003341}}
+img {
+  /* Remove border when inside `a` element in IE 8/9. */
+  border: 0;
+  /* Suppress the space beneath the baseline */
+  /* vertical-align: bottom; */
+  /* Responsive images */
+  max-width: 100%;
+  height: auto;
+  /* Correct IE 8 not scaling image height when resized. */
+  width: auto;
+}
+
+/* Correct overflow displayed oddly in IE 9. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003362}}
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Address margin not present in IE 8/9 and Safari 5. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003367}}
+figure {
+  margin: 0;
+}
+
+/**
+ * Forms
+ */
+/* Define consistent border, margin, and padding. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003383}}
+fieldset {
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-color: #c0c0c0;
+  border-top-style: solid;
+  border-top-width: 0.0625em;
+  padding-top: 0.4625em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 0.9125em;
+  border-left-style: solid;
+  border-left-width: 0.0625em;
+  padding-left: 0.9125em;
+  border-right-style: solid;
+  border-right-width: 0.0625em;
+  padding-right: 0.9125em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003398}}
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 4. Improve appearance and consistency with IE 6/7.
+ * 5. Keep form elements constrained in their containers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003416}}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  max-width: 100%;
+  /* 5 */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 5 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003433}}
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003444}}
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003460}}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003472}}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003483}}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003497}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003507}}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Remove inner padding and border in Firefox 4+. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003513}}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003522}}
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* Drupal-style form labels. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003528}}
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/**
+ * Tables
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_normalize\.scss}line{font-family:\00003536}}
+table {
+  /* Remove most spacing between table cells. */
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* Prevent cramped-looking tables */
+  /* width: 100%; */
+  /* Add vertical rhythm margins. */
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Layout rules */
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\0000334}}
+.wrapper,
+.region-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\0000346}}
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* Containers for grid items and flow items. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000346}}
+#header:before, #header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000350}}
+#header:after,
+#main:after,
+#footer:after {
+  clear: both;
+}
+
+/* Navigation bar */
+@media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\0000360}}
+  #main {
+    /* Move all the children of #main down to make room. */
+    padding-top: 1.5em;
+    position: relative;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\0000365}}
+  #navigation {
+    /* Move the navbar up inside #main's padding. */
+    position: absolute;
+    top: 6.7em;
+    height: 1.5em;
+    width: 100%;
+    z-index: 10;
+  }
+}
+/**
+ * Use 3 grid columns for smaller screens.
+ */
+@media all and (min-width: 480px) and (max-width: 959px) {
+  /**
+   * The layout when there is only one sidebar, the left one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\0000387}}
+  .sidebar-first {
+    /* Span 2 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\0000389}}
+  .sidebar-first #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 33.33333%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\0000394}}
+  .sidebar-first .region-sidebar-first {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+  }
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003102}}
+  .sidebar-second {
+    /* Span 2 columns, starting in 1st column from left. */
+    /* Span 1 column, starting in 3rd column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003104}}
+  .sidebar-second #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003109}}
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The layout when there are two sidebars.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003117}}
+  .two-sidebars {
+    /* Span 2 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+    /* Start a new row and span all 3 columns. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003119}}
+  .two-sidebars #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 33.33333%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003124}}
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003129}}
+  .two-sidebars .region-sidebar-second {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 0;
+    padding-right: 0;
+    clear: left;
+    /* Apply the shared properties of grid items in a single, efficient ruleset. */
+    /* Span 1 column, starting in the 1st column from left. */
+    /* Span 1 column, starting in the 2nd column from left. */
+    /* Span 1 column, starting in the 3rd column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003135}}
+  .two-sidebars .region-sidebar-second .block {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003139}}
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+    clear: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003144}}
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
+    float: left;
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003148}}
+  .two-sidebars .region-sidebar-second .block:nth-child(3n) {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
+}
+/**
+ * Use 5 grid columns for larger screens.
+ */
+@media all and (min-width: 960px) {
+  /**
+   * The layout when there is only one sidebar, the left one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003165}}
+  .sidebar-first {
+    /* Span 4 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003167}}
+  .sidebar-first #content {
+    float: left;
+    width: 80%;
+    margin-left: 20%;
+    margin-right: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003172}}
+  .sidebar-first .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003180}}
+  .sidebar-second {
+    /* Span 4 columns, starting in 1st column from left. */
+    /* Span 1 column, starting in 5th column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003182}}
+  .sidebar-second #content {
+    float: left;
+    width: 80%;
+    margin-left: 0%;
+    margin-right: -80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003187}}
+  .sidebar-second .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+
+  /**
+   * The layout when there are two sidebars.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003195}}
+  .two-sidebars {
+    /* Span 3 columns, starting in 2nd column from left. */
+    /* Span 1 column, starting in 1st column from left. */
+    /* Span 1 column, starting in 5th column from left. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003197}}
+  .two-sidebars #content {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: -80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003202}}
+  .two-sidebars .region-sidebar-first {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/layouts\/_responsive\.scss}line{font-family:\00003207}}
+  .two-sidebars .region-sidebar-second {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+  }
+}
+/* Component (SMACSS module) rules */
+/**
+ * @file
+ * Base styles file
+ *
+ * Use this file to import other partials in the 
+ * base directory.
+ */
+/**
+ * @file
+ * Print styling
+ *
+ * We provide some sane print styling for Drupal using Zen's layout method.
+ */
+/**
+ * By importing this CSS file as media "all", we allow this print file to be
+ * aggregated with other stylesheets, for improved front-end performance.
+ */
+@media print {
+  /* Underline all links. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_print\.scss}line{font-family:\0000316}}
+  a:link,
+  a:visited {
+    text-decoration: underline !important;
+    /* Don't underline header. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_print\.scss}line{font-family:\0000320}}
+  a:link.header__site-link,
+  a:visited.header__site-link {
+    text-decoration: none !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_print\.scss}line{font-family:\0000325}}
+  #content {
+    /* Add visible URL after links. */
+    /* Only display useful links. */
+    /* Add visible title after abbreviations. */
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_print\.scss}line{font-family:\0000327}}
+  #content a[href]:after {
+    content: " (" attr(href) ")";
+    font-weight: normal;
+    font-size: 16px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_print\.scss}line{font-family:\0000335}}
+  #content a[href^="javascript:"]:after,
+  #content a[href^="#"]:after {
+    content: "";
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_print\.scss}line{font-family:\0000340}}
+  #content abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Un-float the content. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_print\.scss}line{font-family:\0000346}}
+  #content {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Turn off any background colors or images. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_print\.scss}line{font-family:\0000357}}
+  body,
+  #page,
+  #main,
+  #content {
+    color: #000;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+
+  /* Hide sidebars and nav elements. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_print\.scss}line{font-family:\0000377}}
+  #skip-link,
+  #toolbar,
+  #navigation,
+  .region-sidebar-first,
+  .region-sidebar-second,
+  #footer,
+  .breadcrumb,
+  .tabs,
+  .action-links,
+  .links,
+  .book-navigation,
+  .forum-topic-navigation,
+  .pager,
+  .feed-icons {
+    visibility: hidden;
+    display: none;
+  }
+}
+/**
+ * @file
+ * Global file
+ *
+ * These are global settings.
+ * 
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_global\.scss}line{font-family:\000039}}
+html {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_global\.scss}line{font-family:\0000312}}
+body {
+  color: white;
+  background: url("http://www.capitalokc.com/d7/sites/default/files/sawimage1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 750px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/base\/_global\.scss}line{font-family:\0000319}}
+body #skip-link {
+  margin: 0;
+}
+
+/**
+ * @file
+ * Containers file
+ *
+ * 
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/containers\/_containers\.scss}line{font-family:\000038}}
+#page #header {
+  height: 117px;
+  z-index: 1;
+  top: 2em;
+  background: url("http://www.capitalokc.com/d7/sites/default/files/topbartransgray.png");
+  background-repeat: repeat-x;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/containers\/_containers\.scss}line{font-family:\0000317}}
+#main > .wrapper {
+  padding-top: 1em;
+}
+
+/**
+ * @file
+ * Blocks file
+ *
+ * 
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/containers\/_blocks\.scss}line{font-family:\000038}}
+.block {
+  padding: 0.625em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/containers\/_blocks\.scss}line{font-family:\0000310}}
+.block h2 {
+  margin-top: 0.313em;
+  margin-bottom: 0.313em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/containers\/_blocks\.scss}line{font-family:\0000314}}
+.block p {
+  margin-top: 0.313em;
+  margin-bottom: 0.313em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/containers\/_blocks\.scss}line{font-family:\0000319}}
+.third {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(59, 59, 59, 0.95);
+  width: 30%;
+  float: left;
+  display: inline-block;
+  border: 2px solid #89bc33;
+  max-height: 246px;
+  height: 246px;
+  line-height: 1.25;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/containers\/_blocks\.scss}line{font-family:\0000329}}
+.third.middle {
+  margin: 0 0.625em;
+}
+
+/**
+ * @file
+ * Typography module file
+ *
+ *
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/modules\/typography\/_typography\.scss}line{font-family:\0000311}}
+a {
+  color: white;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000318}}
+a:visited {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000321}}
+a:focus {
+  color: #669933;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000324}}
+a:hover {
+  color: #669933;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_link-colors\.scss}line{font-family:\0000327}}
+a:active {
+  color: #89bc33;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/links\/_hover-link\.scss}line{font-family:\000034}}
+a:hover {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/modules\/typography\/_typography\.scss}line{font-family:\0000320}}
+#main-menu > ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  padding-right: 0.625em;
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/modules\/typography\/_typography\.scss}line{font-family:\0000324}}
+#main-menu > ul > li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000348}}
+#main-menu > ul > li:first-child, #main-menu > ul > li.first {
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000349}}
+#main-menu > ul > li:last-child {
+  padding-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000350}}
+#main-menu > ul > li.last {
+  padding-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/modules\/typography\/_typography\.scss}line{font-family:\0000326}}
+#main-menu > ul > li > a {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+/**
+ * @file
+ * Shame styles file
+ *
+ * Use this file for styles you know aren't sass-friendly, but have
+ * nowhere to go (yet).
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/_shame\.scss}line{font-family:\000039}}
+.front h1 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/_shame\.scss}line{font-family:\0000312}}
+.front #content {
+  margin-top: 245px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/WebServer\/Documents\/capitalokc\/sites\/all\/themes\/headstorm_industrial\/sass\/_shame\.scss}line{font-family:\0000315}}
+#block-block-1 {
+  float: right;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/* SMACSS theme rules */
+/* @import "theme-A"; */
+/* @import "theme-B"; */

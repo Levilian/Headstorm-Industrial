@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Blocks file
+ *
+ * 
+ */
+
+.block {
+	padding: $tenpx;
+	h2 {
+		margin-top: $fivepx;
+		margin-bottom: $fivepx;
+	}
+	p {
+		margin-top: $fivepx;
+		margin-bottom: $fivepx;
+	}
+}
+.third {
+	@include border-radius(5px);
+	background: rgba($box1-bg-color, 0.95);
+ 	width: 30%;
+ 	float: left;
+ 	display: inline-block;
+ 	border: 2px solid $border-color;
+ 	max-height: $block-height;
+ 	height: $block-height;
+ 	line-height: 1.25;
+	&.middle {
+		margin: 0 $tenpx;
+	}
+}

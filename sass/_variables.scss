@@ -1,0 +1,68 @@
+/**
+ * @file
+ * Variables file
+ *
+ * These variables are used throughout this /sass directory.
+ * The variable values are set for each theme.
+ * 
+ */
+
+// =============================================================================
+// Color Variables
+// =============================================================================
+
+// Basic Colors.
+
+ $aqua: #00ffff;
+ $black: #000000;
+ $blue: #0000ff;
+ $fuschia: #ff00ff;
+ $gray: #808080;
+ $green: #008000;
+ $lime: #00ff00;
+ $maroon: #800000;
+ $navy: #000080;
+ $olive: #808000;
+ $purple: #800080;
+ $red: #ff0000;
+ $silver: #c0c0c0;
+ $teal: #008080;
+ $white: #ffffff;
+ $yellow: #ffff00;
+
+
+// Theme Colors.
+// CHANGE THE VALUE OF THESE FOR EACH SITE!!
+
+ $capital_green_light: #89bc33;
+ $capital_green_dark: #669933;
+ $capital_gray: #cccccc;
+ $trans_gray: #3b3b3b;
+
+// Theme Variables.
+// CHANGE THE VALUE OF THESE FOR EACH SITE!!
+
+ $text-color: $white;
+ $link-color: $white;
+ $link-hover-color: $capital_green_dark;
+ $link-active-color: $capital_green_light;
+ $h1-color: $white;
+ $h-color: $white;
+ $header-bg-color: $black;
+ $body-bg-color: $black;
+ $content-bg-color: $black;
+ $footer-bg-color: $black;
+ $box1-bg-color: $trans_gray;
+ $box2-bg-color: $black;
+ $border-color: $capital_green_light;
+
+
+// =============================================================================
+// Number Variables
+// =============================================================================
+
+// Size and measurement variables.
+
+$fivepx: 0.313em;
+$tenpx: 0.625em;
+$block-height: 246px;

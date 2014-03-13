@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Shame styles file
+ *
+ * Use this file for styles you know aren't sass-friendly, but have
+ * nowhere to go (yet).
+ */
+
+.front h1 {
+	@include element-invisible;
+}
+.front #content {
+	margin-top: 245px;
+}
+#block-block-1 {
+	float: right;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}

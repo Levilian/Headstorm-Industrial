@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Containers file
+ *
+ * 
+ */
+
+#page #header {
+	height: 117px;
+	z-index: 1;
+	top: 2em;
+	background: url("http://www.capitalokc.com/d7/sites/default/files/topbartransgray.png");
+	background-repeat: repeat-x;
+	position: relative;
+}
+
+#main > .wrapper {
+	padding-top: 1em;
+}
+
+ @import "blocks";

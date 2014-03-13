@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Global file
+ *
+ * These are global settings.
+ * 
+ */
+
+html {
+	background-color: $body-bg-color;
+}
+body {
+ 	color: $text-color;
+ 	background:url("http://www.capitalokc.com/d7/sites/default/files/sawimage1.png");
+ 	background-repeat: no-repeat;
+ 	background-position: top center;
+ 	min-height: 750px;
+}
+body #skip-link {
+	margin: 0;
+}
