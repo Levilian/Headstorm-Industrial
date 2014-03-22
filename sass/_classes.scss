@@ -16,16 +16,26 @@
  .l-stacked > * {
  	display: block;
  }
+ .l-60 {
+ 	@extend .background;
+	@include border-radius(5px);
+ 	display: inline-block;
+ 	width: 60%;
+ 	float: left;
+ 	margin-top: 30px;
+ 	padding: 20px;
+ }
 
 
 // =============================================================================
 // Drupal classes
 // =============================================================================
- 
  .header__logo-image {
  	display: inline-block;
  	margin-top: 1.3em;
  	float: left;
+ 	width: 40%;
+ 	max-width: 332px;
  }
  h2.element-invisible {
  	font-size: $fivepx;
@@ -33,3 +43,61 @@
  	margin-top: 0;
  	margin-bottom: 0;
  }
+ .more-link {
+ 	text-align: right;
+ 	font-weight: bold;
+ 	font-size: 1.2em;
+ }
+
+// =============================================================================
+// Panels classes
+// =============================================================================
+.panel-3col-33 {
+	.view {
+		height: $block-height;
+	}
+	.panel-col-first { 
+		text-align: left;
+		margin: 0 .5em 1em 0;
+		width: 32%;
+		.inside {
+			margin: 0;
+		}
+	}
+	.panel-col {
+		text-align: center;
+		margin: 0 .5em 1em .5em;
+		width: 32%;
+		.inside {
+			margin: 0;
+			text-align: left;
+		}
+	}
+	.panel-col-last {
+		text-align: right;
+		margin: 0 0 1em .5em;
+		width: 32%;
+		.inside {
+			margin: 0;
+			text-align: left;
+		}
+	}
+}
+
+
+
+// =============================================================================
+// Display classes
+// =============================================================================
+.background {
+	background: rgba($box1-bg-color, 0.95);
+ 	border: 1px solid $border-color;
+ 	line-height: 1.25;
+}
+.block p.quote {
+	margin-bottom: 1em;
+}
+.block p.name,
+.block p.location {
+	margin: 0;
+}

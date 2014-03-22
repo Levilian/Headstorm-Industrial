@@ -12,8 +12,30 @@
 .front #content {
 	margin-top: 245px;
 }
+.front .block-panels-mini {
+	padding: 0;
+}
 #block-block-1 {
 	float: right;
 	font-size: 1.2em;
 	text-transform: uppercase;
+}
+.page-galleries td,
+.node-type-gallery .views-responsive-grid img {
+	@extend .background;
+	@include border-radius(5px);
+	margin: 0 $tenpx;
+	padding: $tenpx;
+	display: inline-block;
+	h3 {
+		margin-top: 0;
+		margin-bottom: $fivepx;
+		line-height: 1;
+	}
+}
+.panel-3col-33 .panel-col-last .inside .footer-designer {
+	text-align: right;
+}
+.panel-3col-33 .panel-col .inside .footer-logo {
+	text-align: center;
 }

@@ -4,3 +4,8 @@
  *
  *
  */
+
+ @mixin form-labels {
+ 	color: $label-color;
+ 	text-shadow: 0px 1px 0px $label-box-shadow;
+ }

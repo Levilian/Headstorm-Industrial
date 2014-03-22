@@ -17,6 +17,7 @@ a {
 // Lists
 // =============================================================================
 ul {
+	@include no-bullets;
 	#main-menu > & {
 		@include horizontal-list-container;
 		padding-right: 0.625em;
@@ -35,3 +36,19 @@ ul {
 // =============================================================================
 // Text
 // =============================================================================
+
+/* Some or all of these override the settings in _normalize.scss */
+
+h1 {
+	line-height: 1em;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+h2 {
+	line-height: 1em;
+	margin: 1.25em 0 0.5em 0;
+}
+p, pre {
+	margin-top: 1em;
+	margin-bottom: 0;
+}

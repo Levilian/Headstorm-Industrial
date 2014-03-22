@@ -6,3 +6,37 @@
  * module directory.
  * 
  */
+
+@import "mixins";
+@import "states";
+
+.btn {
+	@include background-image(linear-gradient(center top, $white, $capital_green_light));
+	border: 1px solid $capital_green_dark;
+	display: block;
+	height: auto;
+	margin-bottom: 1em;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+	margin-top: 2em;
+	h2 {
+		font-weight: normal;
+		line-height: 54px;
+		margin-top: 0;
+		margin-bottom: 0;
+		text-shadow: 0 0 0.1em #ffffff;
+		text-transform: uppercase;
+		a {
+			color: $white;
+			text-decoration: none;
+			span {
+				color: $white;
+			}
+		}
+	}
+	&.round {
+		@include border-radius(1em, 1em);
+	}
+}

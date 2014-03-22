@@ -117,6 +117,8 @@
   </div>
 
   <div id="full-width-footer">
-    <?php print render($page['footer']); ?>
+    <div class="wrapper">
+      <?php print render($page['footer']); ?>
+    </div>
   </div>
 </div> <!-- end #page -->

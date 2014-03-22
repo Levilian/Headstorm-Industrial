@@ -4,12 +4,18 @@
  *
  * 
  */
+ @import "compass/layout";
+
+@include sticky-footer(25px, "#view_root", "#view_root_footer", "#view_footer");
+
 
 .block {
 	padding: $tenpx;
 	h2 {
-		margin-top: $fivepx;
+		margin-top: 0;
 		margin-bottom: $fivepx;
+		line-height: 1;
+		font-size: 1.7em;
 	}
 	p {
 		margin-top: $fivepx;
@@ -17,15 +23,15 @@
 	}
 }
 .third {
+	@extend .background;
 	@include border-radius(5px);
-	background: rgba($box1-bg-color, 0.95);
- 	width: 30%;
- 	float: left;
- 	display: inline-block;
- 	border: 2px solid $border-color;
+ 	display: block;
  	max-height: $block-height;
  	height: $block-height;
- 	line-height: 1.25;
+ 	img {
+ 		margin-top: $fivepx;
+ 		border: 1px solid $border-color;
+ 	}
 	&.middle {
 		margin: 0 $tenpx;
 	}
