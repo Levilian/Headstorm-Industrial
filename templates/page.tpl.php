@@ -114,6 +114,7 @@
     <?php endif; ?>
 
     </div> <!-- end .wrapper -->
+    <div id="sticky-footer"></div>
   </div>
 
   <div id="full-width-footer">

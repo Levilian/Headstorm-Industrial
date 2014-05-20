@@ -20,8 +20,15 @@
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
-.page-galleries td,
-.node-type-gallery .views-responsive-grid img {
+.page-galleries #content,
+.node-type-gallery #content {
+	padding-top: 1em;
+	h1 {
+		background: rgba($box1-bg-color, 0.95);
+	}
+}
+.page-galleries .views-column,
+.node-type-gallery .views-column {
 	@extend .background;
 	@include border-radius(5px);
 	margin: 0 $tenpx;
@@ -32,10 +39,30 @@
 		margin-bottom: $fivepx;
 		line-height: 1;
 	}
+	img {
+		display: block;
+		margin: 0 auto;
+ 		margin-top: $fivepx;
+ 		border: 1px solid $border-color;
+ 	}
 }
 .panel-3col-33 .panel-col-last .inside .footer-designer {
 	text-align: right;
 }
 .panel-3col-33 .panel-col .inside .footer-logo {
 	text-align: center;
+}
+.page-testimonials #content {
+	@extend .background;
+	@include border-radius(5px);
+	margin: 0 $tenpx;
+	padding: $twentypx;
+}
+#block-panels-mini-footer .panel-2col {
+	background: url("http://www.capitalokc.com/sites/default/files/footerlogo.png");
+	background-position: center top;
+	background-repeat: no-repeat;
+	.footer-designer p {
+		text-align: right;
+	}
 }

@@ -10,12 +10,21 @@ html {
 	background-color: $body-bg-color;
 }
 body {
- 	color: $text-color;
- 	background:url("http://www.capitalokc.com/d7/sites/default/files/sawimage1.png");
- 	background-repeat: no-repeat;
- 	background-position: top center;
  	min-height: 750px;
+ 	color: $text-color;
+ 	background:url("http://www.capitalokc.com/sites/default/files/sawimage1.png") no-repeat center top;
+
 }
+body.section-services,
+body.section-contact {
+	background:url("http://www.capitalokc.com/sites/default/files/servicesbkg.png") no-repeat center top;
+
+}
+body.page-galleries,
+body.node-type-gallery {
+	background:url("http://www.capitalokc.com/sites/default/files/gallerybkg.png") no-repeat center top;
+}
+
 body #skip-link {
 	margin: 0;
 }

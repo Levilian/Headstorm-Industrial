@@ -4,18 +4,21 @@
  *
  * 
  */
+ @import "compass/layout";
+
+@include sticky-footer(72px, "#main", "#sticky-footer", "#full-width-footer");
+
+#main {
+	min-height: 600px;
+}
 
 #page #header {
 	height: 117px;
 	z-index: 1;
 	top: 2em;
-	background: url("http://www.capitalokc.com/d7/sites/default/files/topbartransgray.png");
+	background: url("http://www.capitalokc.com/sites/default/files/topbartransgray.png");
 	background-repeat: repeat-x;
 	position: relative;
-}
-
-#main > .wrapper {
-	padding-top: 1em;
 }
 
 #content {

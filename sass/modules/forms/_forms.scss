@@ -28,7 +28,7 @@ form {
 		&[type="submit"] {
 			@include button(shiny, $capital_green_dark);
 			text-transform: uppercase;
-			width: 6em;
+			width: auto;
 			margin-top: 1em;
 		}
 	}
